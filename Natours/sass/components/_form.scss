@@ -30,6 +30,13 @@
     &::-webkit-input-placeholder {
       color: $color-grey-dark;
     }
+
+  }
+  
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
   }
 
 
@@ -42,9 +49,50 @@
     transition: all .3s;
   }
 
-  &__input:placeholder-shown + &__label {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-4rem);
+  &__radio-group {
+    width: 49%;
+    display: inline-block;
   }
+
+  &__radio-input {
+    display: none;
+  }
+
+  &__radio-label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 4rem;
+    font-size: $default-font-size;
+  }
+
+  &__radio-button {
+    top: -.4rem;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    border: 5px solid $color-primary;
+
+    &::after {
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      content: "";
+      width: 1.3rem;
+      height: 1.3rem;
+      display: block;
+      position: absolute;
+      border-radius: 50%;
+      transition: opacity .2s;
+      background-color: $color-primary;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    opacity: 1;
+  }
+
 }
