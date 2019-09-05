@@ -1,12 +1,12 @@
 .btn {
   &:link, &:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
     position: relative;
+    transition: all .2s;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
     font-size: $default-font-size;
   }
 
@@ -15,8 +15,8 @@
     box-shadow: 0 1rem 2rem rgba($color-black, .2);
 
     &::after {
-      transform: scaleX(1.4) scaleY(1.6);
       opacity: 0;
+      transform: scaleX(1.4) scaleY(1.6);
     }
   }
   
@@ -26,8 +26,8 @@
   }
   
   &--white {
-    background-color: $color-white;
     color: $color-grey;
+    background-color: $color-white;
 
     &::after {
       background-color: $color-white;
@@ -44,16 +44,16 @@
   }
   
   &::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: -1;
+    content: "";
+    height: 100%;
+    position: absolute;
     transition: all .4s;
+    border-radius: 10rem;
+    display: inline-block;
   }
     
   &--animated {
