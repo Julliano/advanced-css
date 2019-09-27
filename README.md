@@ -1,17 +1,17 @@
 ## Project
 
-This project is intended to provide examples of clean and sleek layout websites with advanced css techniques.
+This project has the intention of showing my knowledge with advanced and super current function of css, like Flebox, Grid and animations.
 
 ## FAQ
 
-### Q1: How do I download the files?
+### P1: Natours
 
-**A:** If you're new to GitHub and just want to download the complete package, hit the green button saying "Clone or download", choose the "Download ZIP" option, and you're good to go.
+**A:** This project was done very carefully, thinking a lot about the layout with different visual techniques, many animations and a lot of responsiveness, besides the extensive use of SaSS. The project was built with the theme of a site for guided trails, helping in connecting man nature
 
-### Q2: One of the NPM packages is not working (compiling Sass, live-reload, etc). How to fix it?
+### P2: Trillo
 
-Unfortunately, this is quite common. I listed some possible fixes [in this document](npm-fixes.md).
+This project has the main focus on Flexbox techniques, at many times the excessive use of these techniques but was intentional for the didactics. The project had a theme of a system integrating hotels, car rental, ticket purchase and tours.
 
-### Q3: To can i run a project?
+### P3 Nexter
 
-Just go to project folder, run: npm install, after that, open the index.html in your browser ;)
+This project has the main focus on Grid layout techniques, many times the excessive use of these techniques but was also intentional for the didactics. The project had a theme from a luxury home selling website,
