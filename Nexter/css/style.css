@@ -251,5 +251,33 @@ body {
     object-fit: cover; }
 
 .footer {
+  padding: 8rem;
   background-color: #101d2c;
   grid-column: full-start / full-end; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-gap: 2rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+  .nav__link:link, .nav__link:visited {
+    color: #fff;
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    transition: all .2s;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif; }
+  .nav__link:hover, .nav__link:active {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.05); }
+
+.copyright {
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 6rem auto 0;
+  color: #aaa; }
